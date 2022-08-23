@@ -6,11 +6,11 @@ Escribir dos funciones separadas para imprimir por pantalla los siguientes patro
  **********\
  **********\
  **********\
- **********
+ **********\
 
 2)\
  **\
  ****\
  ******\
  ********\
- **********
+ **********\
