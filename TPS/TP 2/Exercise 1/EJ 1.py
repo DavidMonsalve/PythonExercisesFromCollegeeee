@@ -1,15 +1,15 @@
 from random import randint
 from tkinter.messagebox import RETRY
 
-cantElementos = randint(10, 15)
-digitos = randint(10, 15)
+cantElementos = randint(10, 99)
+digitos = randint(1000, 9999)
 lista = []
 
 #Funcion para cargar la lista
 def cargar_lista(cantElementos, digitos):
     for i in range(cantElementos):
         lista.append(digitos)
-        digitos = randint(10, 15)
+        digitos = randint(1000, 9999)
     return lista
 
 #Funcion para calcular la suma de todos los elementos en la lista
