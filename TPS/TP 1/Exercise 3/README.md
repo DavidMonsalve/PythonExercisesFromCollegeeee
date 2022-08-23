@@ -5,4 +5,4 @@ realizados en un determinado mes y devuelva el total gastado en viajes. Realizar
 1 - 20 viajes -------------> averiguar el valor actualizado.\
 21 - 30 viajes ------------> 20% de descuento sobre la tarifa.\
 31 - 40 viajes ------------> 30% de descuento sobre la tarifa.\
-+40 viajes     ------------> 40% de descuento sobre la tarifa.\
++40 viajes     ------------> 40% de descuento sobre la tarifa.
