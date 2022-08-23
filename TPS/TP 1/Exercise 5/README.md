@@ -2,14 +2,14 @@ Escribir dos funciones separadas para imprimir por pantalla los siguientes patro
 
 1)\
 
--**********\
+ **********\
  **********\
  **********\
  **********\
  **********\
 
 2)\
--**\
+ **\
  ****\
  ******\
  ********\
