@@ -38,8 +38,8 @@ def elementos_unicos(lista):
 #Generar una lista de 50 numeros aleatorios del 1 al 100.
 lista = []
 
-for i in range(5):
-    lista.append(randint(1, 10))
+for i in range(50):
+    lista.append(randint(1, 100))
 print("-----Lista original-------")
 print(lista)
 
