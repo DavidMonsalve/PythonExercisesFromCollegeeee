@@ -1,0 +1,1 @@
+Generar e imprimir una lista por comprension entre A y B con los multiplos de 7 que no sean multiplos de 5. A y B se deben ingresar por teclado.
