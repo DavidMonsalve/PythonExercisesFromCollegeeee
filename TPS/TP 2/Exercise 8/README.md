@@ -1,0 +1,1 @@
+Utilizar la tecnica de listas por comprension para construir una lista con todos los numeros impares comprendidos entre 100 y 200.
