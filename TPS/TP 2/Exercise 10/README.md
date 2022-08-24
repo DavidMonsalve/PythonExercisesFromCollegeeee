@@ -1,0 +1,1 @@
+Generar una lista con numeros al azar entre 1 y 100 y crear una nueva lista con los elementos de la primera que sean impares. El proceso debera realizarse utilizando listas por comprension. Imprimir las dos listas por pantalla.
