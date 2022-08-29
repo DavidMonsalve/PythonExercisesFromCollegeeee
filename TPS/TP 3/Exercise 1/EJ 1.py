@@ -31,18 +31,19 @@ def cargar():
 
 
 def ordenAscendente(matriz):
-    filas = len(matriz[0])
+    matrizAscendente = list(matriz)
+    filas = len(matrizAscendente[0])
     columnas = filas
     aux = 0
     i = 1
     while (i < filas):
-        if matriz[i-1][0] > matriz[i][0]:
-            aux = matriz[i]
-            matriz[i] = matriz[i-1]
-            matriz[i-1] = aux
+        if matrizAscendente[i-1][0] > matrizAscendente[i][0]:
+            aux = matrizAscendente[i]
+            matrizAscendente[i] = matrizAscendente[i-1]
+            matrizAscendente[i-1] = aux
         i += 1
     print("----matriz en orden ascendente por filas.----")
-    leerMatriz(matriz, filas, columnas)
+    leerMatriz(matrizAscendente, filas, columnas)
 
 def cargarFilasAintercambiar(matriz):
     a = int(input("fila: "))
@@ -95,6 +96,39 @@ def porcentajeImpar(matriz):
     porcentaje = (sumador/columnas)*100
     print(porcentaje, "%")
 
+def SimetriaDiagonalPrincipal(matriz):
+    print("--------------Calculando simetria de matriz con respecto a diagonal principal--------------")
+    diagonalPrincipal = []
+    for i in range(len(matriz)):
+        diagonalPrincipal.append(matriz[i][i])
+    diagonalPrincipalInvertida = list(diagonalPrincipal)
+    diagonalPrincipalInvertida.reverse()
+    print(diagonalPrincipal)
+    print(diagonalPrincipalInvertida)
+
+    if diagonalPrincipal == diagonalPrincipalInvertida:
+        print("La matriz es simetrica en relacion a su diagonal principal!")
+    else:
+        print("La matriz NO es simetrica en relacion a su diagonal principal...")
+
+def SimetriaDiagonalSecundaria(matriz):
+    print("--------------Calculando simetria de matriz con respecto a diagonal secundaria--------------")
+    diagonalSecundaria = []
+    columna = 0
+    for i in range(len(matriz)-1, -1, -1):
+        diagonalSecundaria.append(matriz[i][columna])
+        columna += 1
+    diagonalSecundariaInvertida = list(diagonalSecundaria)
+    diagonalSecundariaInvertida.reverse()
+    print(diagonalSecundaria)
+    print(diagonalSecundariaInvertida)
+
+    if diagonalSecundaria == diagonalSecundariaInvertida:
+        print("La matriz es simetrica en relacion a su diagonal secundaria!")
+    else:
+        print("La matriz NO es simetrica en relacion a su diagonal secundaria...")
+
+
 matriz = cargar()
 ordenAscendente(matriz)
 
@@ -106,3 +140,6 @@ intercambiarFilas(matriz, a, b)
 transponer(matriz)
 promedioFila(matriz)
 porcentajeImpar(matriz)
+SimetriaDiagonalPrincipal(matriz)
+SimetriaDiagonalSecundaria(matriz)
+
