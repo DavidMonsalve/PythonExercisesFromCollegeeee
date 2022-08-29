@@ -6,7 +6,7 @@ Para cada una de las siguientes matrices, desarrollar una funcion que la genere 
     [0, 0, 5, 0]
     [0, 0, 0, 7]
 ]
-- b = [
+- b = 
 
       [0, 0, 0, 27]
 
@@ -15,4 +15,3 @@ Para cada una de las siguientes matrices, desarrollar una funcion que la genere 
       [0, 3, 0, 0]
     
       [1, 0, 0, 0]
-]
