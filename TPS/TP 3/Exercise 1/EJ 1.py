@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 def leerMatriz(matriz, filas, columnas):
     for f in range (filas):
         for c in range (columnas):
