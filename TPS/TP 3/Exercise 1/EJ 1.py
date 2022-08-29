@@ -53,16 +53,11 @@ def transponer(matriz):
     t = [] 
     columnas = len(matriz[0])
     filas = len(matriz)
-    print("-----Transponer matriz-----")
-    print("MATRIZ ORIGINAL")
-    leerMatriz(matriz, filas, columnas)
     for i in range (columnas):
         t.append([])
         for j in range (filas):
             t[i].append(matriz[j][i])
-    
-    print("MATRIZ TRANSPUESTA")
-    leerMatriz(t, filas, columnas)
+    return t
 
 def promedioFila(matriz):
     fila = int(input("Fila de la cual desea saber promedio: "))
@@ -115,8 +110,32 @@ def SimetriaDiagonalSecundaria(matriz):
     else:
         print("La matriz NO es simetrica en relacion a su diagonal secundaria...")
 
+def columnasPalindromos(matriz, filas, columnas):
+    x = transponer(matriz)
+    leerMatriz(x, filas, columnas)
+    lista = []
+    listaFinal = []
+    j = 0
+    for i in range(filas):
+        lista = []
+        lista2 = []
+        for j in range(columnas):
+            lista.append(x[i][j])
+        lista2 = list(lista)
+        lista2.reverse()
+        if lista == lista2:
+            print("columna ", i, " es capicua: ", lista)
+            listaFinal.append(lista)
+        else:
+            print("columna ", i, " no es capicua")
+    print("Numeros de columnas capicuas: ", listaFinal)
+
+
 
 matriz = cargar()
+columnas = len(matriz[0])
+filas = len(matriz)
+
 ordenAscendente(matriz)
 
 print("----- filas a cambiar -----")
@@ -124,9 +143,18 @@ print("¿Cuales filas desea intercambiar?")
 a = cargarFilasAintercambiar(matriz)
 b = cargarFilasAintercambiar(matriz)
 intercambiarFilas(matriz, a, b)
-transponer(matriz)
+
+print("-----Transponer matriz-----")
+print("MATRIZ ORIGINAL")
+leerMatriz(matriz, filas, columnas)
+t = transponer(matriz)
+print("MATRIZ TRANSPUESTA")
+leerMatriz(t, filas, columnas)
+
 promedioFila(matriz)
 porcentajeImpar(matriz)
 SimetriaDiagonalPrincipal(matriz)
 SimetriaDiagonalSecundaria(matriz)
 
+print("-------Calculando columnas capicuas----------")
+columnasPalindromos(matriz, filas, columnas)
