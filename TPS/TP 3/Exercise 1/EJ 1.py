@@ -115,7 +115,6 @@ def columnasPalindromos(matriz, filas, columnas):
     leerMatriz(x, filas, columnas)
     lista = []
     listaFinal = []
-    j = 0
     for i in range(filas):
         lista = []
         lista2 = []
