@@ -8,7 +8,10 @@ Para cada una de las siguientes matrices, desarrollar una funcion que la genere 
 ]
 - b = [
     [0, 0, 0, 27]
+
     [0, 0, 9, 0]
+    
     [0, 3, 0, 0]
+    
     [1, 0, 0, 0]
 ]
