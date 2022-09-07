@@ -1,18 +1,32 @@
-def crear(filas, columnas):
-    matriz [0*columnas in range (filas)]
 
-def a(filas):
-    matriz = []
-    cantidad = 0
+
+
+
+
+
+
+
+
+
+
+def crear(filas, columnas):
+    m = [[0]*columnas for i in range (filas)]
+    return m
+
+def a(m, filas):
+    cantidad = 1
     for i in range(filas):
-        matriz[i][i] = i + cantidad
-        cantidad = 2
-    print(matriz)
+        m[i][i] = cantidad
+        cantidad += 2
+    print(m)
         
 
 
 
-filas = int(input("dimension de la matriz: "))
-columnas = filas
+filas = int(input("filas: "))
+columnas = int(input("columnas: "))
 
-a(filas)
+matriz = crear(filas, columnas)
+print(matriz)
+
+a(matriz, filas)
