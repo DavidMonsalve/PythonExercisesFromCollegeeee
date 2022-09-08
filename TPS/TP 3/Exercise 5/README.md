@@ -2,8 +2,7 @@ Desarrolle un programa que permita realizar reservas en una sala de cine de barr
 de N filas con M butacas por cada fila. Desarrollar las siguientes funciones y
 utilizarlas en un mismo programa:
 
-mostrar_butacas: Mostrará por pantalla el estado de cada una de las butacas
-
+- mostrar_butacas: Mostrará por pantalla el estado de cada una de las butacas
 del cine por pantalla. Se deberá mostrar antes de que el usuario realice la reserva
 y se volverá a mostrar luego de la misma, con los estados actualizados.
 reservar: Deberá recibir una matriz y la butaca seleccionada, y actualizará la
