@@ -5,7 +5,8 @@ utilizarlas en un mismo programa:
 - mostrar_butacas: Mostrará por pantalla el estado de cada una de las butacas
 del cine por pantalla. Se deberá mostrar antes de que el usuario realice la reserva
 y se volverá a mostrar luego de la misma, con los estados actualizados.
-reservar: Deberá recibir una matriz y la butaca seleccionada, y actualizará la
+
+- reservar: Deberá recibir una matriz y la butaca seleccionada, y actualizará la
 matriz en caso de estar disponible dicha butaca. La función devolverá
 
 - True/False si logró o no reservar la butaca.
