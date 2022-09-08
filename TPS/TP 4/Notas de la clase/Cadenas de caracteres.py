@@ -88,7 +88,7 @@ print(cad[9:18])
 
 
 
-#MÉTODOS()------------------------------------------------------------------------------------------------------
+#FUNCIONES()------------------------------------------------------------------------------------------------------
 
 cad = "Me gusta la clase de programación"
 
@@ -135,3 +135,89 @@ print(cadupper.isupper())
 #islower Determina si esta en minus
 cadminus = "abcd"
 print(cadminus.islower())
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+#METODOS-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#.upper() Pone todo en mayus
+cad = "programacion"
+print(cad.upper())
+
+
+#.lower() Pone todo en minus
+print(cad.lower())
+
+#.capitalize() Pone la primera letra del string en Mayus
+cap = "bienvenido a la clase"
+print(cap.capitalize())
+
+#.title() Pone mayus la 1era letra de cada palabra
+print(cap.title())
+
+#.split() Crea una lista con cada palabra de la cadena.
+print(cap.split())
+
+#"".join(cadena) Lo que se escriba entre las comillas sera puesto entre cada caracter de la cadena
+cap =" ".join(cap)
+print(cap)
+
+
+#.center(<ancho>, <relleno>) Completa la cadena con el caracter que indiquemos hasta llegar al numero indicado.
+#Si ponemos Hola y pasamos como parametro 10 y *
+#Imprimira = ***Hola***
+cadena = "hola"
+print(cadena.center(10, "-"))
+
+#variaciones del .center() = 
+
+    #.ljust(<ancho>, <relleno>)
+print(cadena.ljust(10, "-"))
+
+    #rjust(<ancho>, <relleno>)
+print(cadena.rjust(10, "-"))
+
+
+
+
+
+
+
+
+#.zfill() rellena con tantos 0's como indiquemos
+cad = "123"
+print(cad.zfill(10)) #0000000123
+
+
+#.lstrip("dato") elimina el caracter indicado, a la izquierda
+cad = "----hola mundo----"
+print(cad.lstrip("-")) #hola mundo----
+
+#.rstrip("dato") elimina el caracter indicado, a la derecha
+cad = "----hola mundo----"
+print(cad.lstrip("-")) #----hola mundo
+
+#.strip("dato") elimina el caracter indicado, a ambos lados
+cad = "----hola mundo----"
+print(cad.strip("-")) #hola mundo
+
+#format Pone un espacio.
+a = 25
+print("%4d" %a)
+
+#format
+
+legajo = 123456
+nombre = "maria"
+nota = 8
+print("Legajo {} Nombre {} Nota {}" .format(legajo, nombre, nota))
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
