@@ -1,15 +1,16 @@
-def invertir_cadena(cadena):
-    cadenaInvertida = ""
-    for letra in cadena:
-        cadenaInvertida = letra + cadenaInvertida
-    return cadenaInvertida
-
 def esCapicua(cadena):
-    cadena_2 = invertir_cadena(cadena)
-    if cadena == cadena_2:
-        print("es capicua")
-    else:
-        print("no es capicua")
+    anterior = 0
+    ultimo = len(cadena) - 1
+
+    while (anterior <= ultimo):
+        if cadena[anterior] != cadena[ultimo]:
+            return False
+        anterior += 1
+        ultimo -= 1
+    return True
 
 cadena = input("Cadena de caracteres: ")
-esCapicua(cadena)
+if esCapicua(cadena) == True:
+    print("Es capicúa")
+else:
+    print("No es capicua")
