@@ -207,3 +207,8 @@ nombre = "maria"
 nota = 8
 print("Legajo {} Nombre {} Nota {}" .format(legajo, nombre, nota))
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Realizar los siguientes ejercicios de la practica:
+
+#1 - 2 - 3 - 6 - 7 - 9 - 12 - 14.
