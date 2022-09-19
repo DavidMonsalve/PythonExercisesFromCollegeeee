@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 from random import randint
 
 def leerMatriz(m, f, c):
