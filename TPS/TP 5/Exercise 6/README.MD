@@ -1,4 +1,5 @@
-6. El método index permite buscar un elemento dentro de una lista, devolviendo la
+## 6
+ El método index permite buscar un elemento dentro de una lista, devolviendo la
 posición que éste ocupa. Sin embargo, si el elemento no pertenece a la lista se
 produce una excepción de tipo ValueError. Desarrollar un programa que cargue
 una lista con números enteros ingresados a través del teclado (terminando con -1)
@@ -7,7 +8,8 @@ posición que ocupan, utilizando el método index. Si el número no pertenece a 
 lista se imprimirá un mensaje de error y se solicitará otro para buscar. Abortar el
 proceso al tercer error detectado. No utilizar el operador in durante la búsqueda.
 
-6. The index method allows searching for an element within a list, returning the
+## 6
+ The index method allows searching for an element within a list, returning the
 position it occupies. However, if the element does not belong to the list,
 throws an exception of type ValueError. Develop a program that loads
 a list with integers entered via the keyboard (ending with -1)
