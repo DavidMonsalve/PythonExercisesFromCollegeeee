@@ -1,5 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from random import randint as azar
 def carga():
-    try:
+  
+        """
         dia = int(input("dia: "))
         while dia > 31 or (dia < 1):
             print("El dia no es válido.")
@@ -29,11 +47,28 @@ def carga():
         print("carga finalizada.")
         return sdia, smes, smm
 
-xdia, xmes, xmm = carga()
-update = xdia + ";" + xmes + ";" + xmm
+xdia, xmes, xmm = carga()"""
 
-f = open("datos.txt", "a")
-f.write(update + "\n")
-f.close()
+
+dia = azar(1, 31)
+mes = azar(1, 12)
+mm = azar(0, 999999)
+rango = azar(50, 200)
+
+for i in range(rango):
+    dia = azar(1, 31)
+    mes = azar(1, 12)
+    mm = azar(0, 999999)
+    rango = azar(50, 200)
+    update = str(dia) + ";" + str(mes) + ";" + str(mm)
+
+    f = open("datos.txt", "a")
+    f.write(update + "\n")
+    f.close()
+
+#--- leer
+with open("datos.txt", "r") as f:
+    for fila in f:
+        print(fila)
 
 exit = input("Presione cualquier tecla para finalizar.")
