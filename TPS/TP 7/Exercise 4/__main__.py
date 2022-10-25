@@ -24,4 +24,4 @@ def main():
     auxB = b
     producto(a, b, total, auxA, auxB)
 
-main()
+main() 
