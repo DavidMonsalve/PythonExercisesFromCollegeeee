@@ -5,7 +5,7 @@ def leer(dic, n):
 
 def cargar(dic, n):
     for i in range(12):
-        clave = i+1
+        clave = i + 1
         dato = n * clave
 
         dic[clave] = dato
